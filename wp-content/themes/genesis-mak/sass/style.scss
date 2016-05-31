@@ -1,0 +1,54 @@
+/* # Genesis Sample Child Theme
+Theme Name: the artist's J.D.
+Theme URI: http://my.studiopress.com/themes/genesis/
+Description: This is the sample theme created for the Genesis Framework.
+Author: StudioPress
+Author URI: http://www.studiopress.com/
+Template: genesis
+Template Version: 2.2.2
+Tags: black, orange, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import 'partials/reset';
+
+@import 'partials/variables';
+
+@import 'partials/type';
+
+@import 'partials/objects';
+
+@import 'partials/gallery';
+
+@import 'partials/forms';
+
+@import 'partials/tables';
+
+@import 'partials/screen-readers';
+
+@import 'partials/common';
+
+@import 'partials/plugins';
+
+@import 'partials/columns';
+
+@import 'partials/structure';
+
+@import 'partials/header';
+
+@import 'partials/footer';
+
+@import 'partials/navigation';
+
+@import 'partials/widgets';
+
+@import 'partials/sidebar';
+
+@import 'partials/page-content';
+
+@import 'partials/modernizr';
+
+@import 'partials/responsive';
+
+@import 'partials/print';

@@ -1,0 +1,42 @@
+/* VARIABLES */
+
+$body-bg: #dedfe2;
+
+$gray: #d7d9dc;
+$blue: #737c96;
+$ltblue: #8189a1;
+$purple: #c1c1d2;
+
+$main-text-color: #000;
+$link-color: #c3251d;
+
+$prox: "proxima-nova",sans-serif;
+$expo: "expo-sans-pro",sans-serif;
+$expocond: "expo-sans-pro-condensed",sans-serif;
+
+$envelope: 1400px;
+$vertpadding: 30px;
+$break: ($vertpadding * 2) + $envelope;
+
+/* MIXINS */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+      -ms-transition: $transition;
+          transition: $transition;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+          transform: $transform;
+}

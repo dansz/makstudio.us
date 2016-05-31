@@ -1,0 +1,538 @@
+/* ## Titles
+--------------------------------------------- */
+.archive-title {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+.entry-title {
+	font-size: 28px;
+	font-size: 2.8rem;
+	font-weight: 700;
+	a {
+		color: $main-text-color;
+		&:hover,
+		&:focus {
+			color: $link-color;
+		}
+	}
+}
+
+.sidebar .widget-title a {
+	color: $main-text-color;
+}
+
+.widget-title {
+	font-size: 18px;
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+}
+
+.footer-widgets .widget-title {
+	color: #fff;
+}
+
+/* ## Entries
+--------------------------------------------- */
+.content .entry {
+	
+}
+
+.entry {
+	margin-bottom: 40px;
+	padding: 0;
+	.entry-content {
+		
+		ol, ul {
+			margin-bottom: 28px;
+			margin-left: 40px;
+		}
+		ol > li {
+			list-style-type: decimal;
+		}
+		ul > li {
+			list-style-type: disc;
+		}
+		ol ol,
+		ul ul {
+			margin-bottom: 0;
+		}
+		code {
+			background-color: $main-text-color;
+			color: #ddd;
+		}
+	}
+}
+
+/* ## Entry Meta
+--------------------------------------------- */
+p.entry-meta {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 0;
+}
+
+.entry-header {
+	.entry-meta {
+		margin-bottom: 24px;
+	}
+}
+
+.entry-footer {
+	.entry-meta {
+		border-top: 2px solid #f5f5f5;
+		padding-top: 24px;
+	}
+}
+
+.entry-categories,
+.entry-tags {
+	display: block;
+}
+
+.entry-comments-link::before {
+	content: "\2014";
+	margin: 0 6px 0 2px;
+}
+
+/* ## Pagination
+--------------------------------------------- */
+.pagination {
+	clear: both;
+	margin: 40px 0;
+}
+
+.adjacent-entry-pagination {
+	margin-bottom: 0;
+}
+
+.archive-pagination {
+	li {
+		display: inline;
+		a {
+			background-color: $main-text-color;
+			color: #fff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 16px;
+			font-size: 1.6rem;
+			padding: 8px 12px;
+			text-decoration: none;
+		}
+		a:hover,
+		a:focus,
+		&.active a {
+			background-color: $link-color;
+			text-decoration: underline;
+		}
+	}
+}
+
+/* ## Comments
+--------------------------------------------- */
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	background-color: #fff;
+	margin-bottom: 40px;
+}
+
+.comment-respond,
+.entry-pings {
+	padding: 40px 40px 16px;
+}
+
+.entry-comments {
+	padding: 40px;
+}
+
+.comment-header {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+li.comment {
+	background-color: $body-bg;
+	border: 2px solid #fff;
+	border-right: 0;
+}
+
+.comment-content {
+	clear: both;
+	word-wrap: break-word;
+}
+
+.comment-list li {
+	margin-top: 24px;
+	padding: 32px;
+}
+
+.comment-list li li {
+	margin-right: -32px;
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+	width: 50%;
+}
+
+.comment-respond label {
+	display: block;
+	margin-right: 12px;
+}
+
+.entry-comments .comment-author {
+	margin-bottom: 0;
+}
+
+.entry-pings .reply {
+	display: none;
+}
+
+.bypostauthor {
+}
+
+.form-allowed-tags {
+	background-color: $body-bg;
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding: 24px;
+}
+
+.tile-grid {
+	padding: 100px 0;
+	max-width: 1000px;
+	margin: 0 auto;
+	font-size: 0;
+	.tile {
+		text-transform: lowercase;
+		color: #fff;
+		display: inline-block;
+		font-size: 14px;
+		font-style: italic;
+		text-decoration: none;
+		margin-bottom: 24px;
+		width: 25%;
+		.attachment-tile {
+			display: block;
+			width: 200px;
+			height: auto;
+		}
+		span {
+			display: block;
+			position: relative;
+			margin-top: 4px;
+			&:after {
+				content: '';
+				background-color: $main-text-color;
+				display: block;
+				width: 0;
+				height: 4px;
+				position: absolute;
+				left: 0;
+				top: -4px;
+				@include transition(300ms width ease-in-out);
+			}
+		}
+		&.active {
+			color: $main-text-color;
+			span {
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+	}
+	
+	.tile-info {
+		font-size: 14px;
+		background-color: $gray;
+		padding: 1.5em;
+		float: left;
+		width: 100%;
+		margin-bottom: 24px;
+		@include transition(300ms opacity ease-in-out);
+		.surface-head {
+			margin-bottom: 2em;
+			h3 {
+				text-transform: uppercase;
+			}
+			.phonetic {
+				text-transform: uppercase;
+			}
+			.short-desc {
+				text-align: right;
+				font-style: italic;
+			}	
+		}
+		.two-up {
+			h5 {
+				border-bottom: solid 2px $main-text-color;
+				text-transform: uppercase;
+			}
+			span {
+				display: block;
+			}
+		}
+	}
+	
+}
+
+.page {
+	.site-inner {
+		background-color: $blue;
+		padding-top: 100px;
+		padding-bottom: 150px;
+		color: #fff;
+		min-height: 100vh;
+		display: table;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		.bg-wrapper {
+			background-size: cover;
+			background-position: center center;
+			position: absolute;
+			z-index: 0;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+		.content-sidebar-wrap {
+			display: table-cell;
+			vertical-align: middle;
+			.content {
+				float: none;
+				position: relative;
+				z-index: 1;
+				.entry {	
+					max-width: 800px;
+					margin: 0 auto;
+					.entry-content {
+						font-style: italic;
+						padding-left: 2em;
+						h1, h2, h3, h4 {
+							font-style: normal;
+						}
+					}
+				}
+			}
+		}
+		
+		
+	}
+}
+
+.home {
+	.site-inner .content-sidebar-wrap .content {
+		.entry {
+			max-width: none;
+		}
+		.entry-title {
+			display: none;
+		}
+		.entry-content {
+			text-align: right;
+			font-family: $prox;
+			font-style: normal;
+			blockquote {
+				margin: none;
+				font-style: normal;
+				font-size: 18px;
+				strong {
+					font-weight: inherit;
+					text-transform: uppercase;
+				}
+				.cite {
+					font-size: 21px;
+					text-transform: uppercase;
+					&:before {
+						content: '/';
+					}
+				}
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.page-designers {
+	.entry-title {
+		display: none;
+	}
+	.entry-content {
+		padding-left: 0 !important;
+		img {
+			display: block;
+			margin: 3em auto;
+		}
+	}
+	.team-members {
+		background-color: $blue;
+		color: #fff;
+		.nav {
+			margin: 50px 0;
+			display: none;
+			li {
+				display: inline-block;
+				width: 24.5%;
+				text-align: center;
+				margin: 1.5em 0;
+				cursor: pointer;
+				
+					.job-title {
+						display: block;
+					}
+					h5 {
+						display: inline-block;
+						border-bottom: solid 4px transparent;
+						padding-bottom: 12px;
+					}
+				&.active {
+					h5 {
+						border-color: #fff;
+					}
+				}
+			}
+			
+		}
+		.info-cards {
+			margin-bottom: 100px;
+			.card {
+				clear: both;
+	
+				.card-content {
+					background-color: $ltblue;
+					padding: 2em;
+				
+					.person-header {
+						margin-bottom: 2em;
+						text-align: center;
+					}
+					.person-content {
+						font-style: italic;
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+.page-architecture {
+	.arch-gallery {
+		.tile {
+			width: 48%;
+			display: inline-block;
+			text-align: center;
+			text-decoration: none;
+			color: $ltblue;
+			margin: 50px 0 25px;
+			img {
+				width: 100%;
+				display: block;
+			}
+			&:nth-of-type(odd) {
+				margin-right: 1.5%;
+			}
+			h2 {
+				text-transform: none;
+				font-size: 21px;
+				font-size: 2.1rem;
+				margin-bottom: 1em;
+			}
+		}
+		.drawer {
+			background-color: $purple;
+			padding: 2em;
+			float: left;
+			clear: both;
+		}
+	}
+}
+
+.page-furniture {
+	.tile-grid {
+		.tile { 
+			width: 50%;
+			.attachment-tile {
+				display: block;
+				width: 400px;
+				height: auto;
+			}
+		}
+	}
+}
+
+.single-architecture,
+.single-digifab {
+	.site-inner {
+		text-align: center;
+		background-color: $blue;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		color: #fff;
+		min-height: 100vh;
+		display: table;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		.details-tab {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 2em;
+			z-index: 1;
+			span {
+				display: block;
+			}
+		}
+		.bg-wrapper {
+			background-size: cover;
+			background-position: center center;
+			position: absolute;
+			z-index: 0;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+		.content-sidebar-wrap {
+			display: table-cell;
+			vertical-align: middle;
+			.content {
+				float: none;
+				position: relative;
+				z-index: 1;
+				.entry {	
+					max-width: 800px;
+					margin: 0 auto;
+					.entry-content {
+						font-style: italic;
+						padding-left: 2em;
+						h1, h2, h3, h4 {
+							font-style: normal;
+						}
+					}
+				}
+			}
+		}
+	}
+	.project-content {
+		padding-top: 12em;;
+		max-width: 1100px;
+		text-align: center;
+		font-style: italic;
+		.short-desc {
+			font-style: normal;
+			text-transform: uppercase;
+			font-family: $prox;
+		}
+	}
+}

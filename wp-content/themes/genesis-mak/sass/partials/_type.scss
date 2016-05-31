@@ -1,0 +1,143 @@
+/* ## Typographical Elements
+--------------------------------------------- */
+
+html {
+    font-size: 62.5%; /* 10px browser default */
+}
+
+body {
+	background-color: $body-bg;
+	color: $main-text-color;
+	font-family: $expo;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: 300;
+	line-height: 1.4;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	& > div {
+    font-size: 1.4rem;
+    }
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button,
+.gallery img {
+	@include transition(all 0.1s ease-in-out);
+}
+
+a {
+	color: $link-color;
+	text-decoration: underline;
+	&:hover,
+	&:focus {
+		color: $main-text-color;
+		text-decoration: none;
+	}
+}
+
+p {
+	margin: 0 0 28px;
+	padding: 0;
+}
+
+ol, ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style-type: none;
+	}
+}
+
+hr {
+	border: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #ddd;
+	clear: both;
+	margin: 1em 0;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+blockquote,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 40px;
+	&::before {
+		content: "\201C";
+		display: block;
+		font-size: 30px;
+		font-size: 3rem;
+		height: 0;
+		left: -20px;
+		position: relative;
+		top: -10px;
+	}
+}
+
+/* ## Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $prox;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0 0 10px;
+	text-transform: uppercase;
+	letter-spacing: .125em;
+	&.small {
+		font-size: 16px;
+		font-size: 1.6rem;
+		font-weight: 700;	
+	}
+}
+
+h1 {
+	font-size: 36px;
+	font-size: 3.6rem;
+}
+
+h2 {
+	font-size: 30px;
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+h6 {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
